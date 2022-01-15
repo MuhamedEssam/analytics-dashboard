@@ -16,7 +16,7 @@ server = app.server
 
 #--------------------------# Pandas Section #------------------------------#
 
-df =pd.read_csv('Churn_Modelling.csv') 
+df =pd.read_csv('./Churn_Modelling.csv') 
 df['Age_']=pd.cut(df['Age'],3 , labels= ["Young","Mid_Aged","Old"])
 df['Balance_']=pd.cut(df['Balance'],3 , labels= ["Low","Mid_Balance","High"])
 
